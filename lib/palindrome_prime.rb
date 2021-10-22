@@ -14,5 +14,9 @@ module PalindromePrimeMod
     def palindrome_prime?(number)
       @palindrome.palindrome?(number) && @prime.prime?(number)
     end
+
+    def palindrome_prime_list(n)
+      1.upto(Float::INFINITY).lazy.filter { |number| number if palindrome_prime?(number) }.first(n)
+    end
   end
 end

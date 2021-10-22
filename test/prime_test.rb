@@ -17,4 +17,10 @@ class PrimeTest < Minitest::Test
     expected_output = false
     assert_equal(expected_output, @prime.prime?(input))
   end
+
+  def test_prime_2_returns_true
+    input = 2
+    expected_output = true
+    assert_equal(expected_output, @prime.prime?(input))
+  end
 end

@@ -29,4 +29,10 @@ class PalindromePrimeTest < Minitest::Test
     expected_output = false
     assert_equal(expected_output, @palindrome_prime.palindrome_prime?(input))
   end
+
+  def test_palindrome_prime_list_size_5
+    input = 5
+    expected_output = [2, 3, 5, 7, 11]
+    assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
+  end
 end

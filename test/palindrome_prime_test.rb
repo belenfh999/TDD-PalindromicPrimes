@@ -35,4 +35,34 @@ class PalindromePrimeTest < Minitest::Test
     expected_output = [2, 3, 5, 7, 11]
     assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
   end
+
+  def test_palindrome_prime_list_size_6
+    input = 6
+    expected_output = [2, 3, 5, 7, 11, 101]
+    assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
+  end
+
+  def test_palindrome_prime_list_size_7
+    input = 7
+    expected_output = [2, 3, 5, 7, 11, 101, 131]
+    assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
+  end
+
+  def test_palindrome_prime_list_size_8
+    input = 8
+    expected_output = [2, 3, 5, 7, 11, 101, 131, 151]
+    assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
+  end
+
+  def test_palindrome_prime_list_size_9
+    input = 9
+    expected_output = [2, 3, 5, 7, 11, 101, 131, 151, 181]
+    assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
+  end
+
+  def test_palindrome_prime_list_size_10
+    input = 10
+    expected_output = [2, 3, 5, 7, 11, 101, 131, 151, 181, 191]
+    assert_equal(expected_output, @palindrome_prime.palindrome_prime_list(input))
+  end
 end

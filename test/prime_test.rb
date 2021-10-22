@@ -35,4 +35,28 @@ class PrimeTest < Minitest::Test
     expected_output = false
     assert_equal(expected_output, @prime.prime?(input))
   end
+
+  def test_prime_5_returns_false
+    input = 5
+    expected_output = true
+    assert_equal(expected_output, @prime.prime?(input))
+  end
+
+  def test_prime_6_returns_false
+    input = 6
+    expected_output = false
+    assert_equal(expected_output, @prime.prime?(input))
+  end
+
+  def test_prime_101_returns_true
+    input = 101
+    expected_output = true
+    assert_equal(expected_output, @prime.prime?(input))
+  end
+
+  def test_prime_102_returns_false
+    input = 102
+    expected_output = false
+    assert_equal(expected_output, @prime.prime?(input))
+  end
 end

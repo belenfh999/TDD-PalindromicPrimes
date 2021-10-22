@@ -29,4 +29,10 @@ class PalindromeTest < Minitest::Test
     expected_output = true
     assert_equal(expected_output, @palindrome.palindrome?(input))
   end
+
+  def test_palindrome_10_returns_false
+    input = 10
+    expected_output = false
+    assert_equal(expected_output, @palindrome.palindrome?(input))
+  end
 end

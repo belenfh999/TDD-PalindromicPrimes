@@ -19,7 +19,8 @@ This class has the methods:
 * palindrome_prime_list(n): Returns an array of size 'n' with the numbers that are both palindrome and prime.
   * Input:    n   -> number of elements in array
   * Output: array
-##Use Cases (Palindrome Prime List)
+
+## Use Cases (Palindrome Prime List)
   * Input: n = 5
   * Output: [2, 3, 5, 7, 11]
 
